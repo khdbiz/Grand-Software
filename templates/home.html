@@ -2,6 +2,8 @@
 <html>
   
   <head>
+<! --Bootstrap-->     
+  
     <title>Grand Software</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,10 +12,9 @@
 
   
   <body>
-    
+<! --CSS-->    
     <style>
       h3 {
-        margin-top: 70px;
   margin-bottom: 15px;
       }
       form {
@@ -24,13 +25,9 @@
         margin-top: 15px;
   margin-bottom: 13px;
       }
-  .payed {
-    margin-left: 20px;
-  }   
     </style>
     
-
-    
+<! --Top(Slip, Vehicle, Date, Time)--> 
 <div class="w-50 p-3">
   <div class="row g-3">
   <div class="col-sm-3">
@@ -51,13 +48,13 @@
   </div>
 </div>
   
-   
-    
+
+<! --Drop_down (Heading)-->              
   <div class="w-50 p-3">
     <h3>Vehicle Type</h3>
       <div class="row g-3">
         <div class="col-sm-3">
-
+ <! --Drop_down-->            
         <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
     <option selected>Type...</option>
     <option value="1">4 wheeler</option>
@@ -66,6 +63,8 @@
   </select>   
         </div>
 
+        
+<! --Payed-->         
 <div class="col-sm-3">
   <div class="input-group mb-3">
     <div class="input-group-prepend">
@@ -76,35 +75,65 @@
    </div>
   </div>
 </div>
-        
+
+    
+<! --Gross, Tare, Net-->
+    
+  <div class="w-50 p-3">
+<div class="col-sm-3">
   
-
-       
-
-    
-    
-
-<div class="w-50 p-3">
-
-  <div class="row g-3">
-  <div class="col-sm-3">
-    <input type="text" class="form-control" placeholder="Gross" aria-label="Gross">
-  </div>
-  <div class="col-sm-3">
-    <input type="text" class="form-control" placeholder="Tare" aria-label="Tare">
-  </div>
-  <div class="col-sm-3">
-    <input type="text" class="form-control" placeholder="Net" aria-label="Net">
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Gross</span>
+    </div>
+       <input type="text" class="form-control" placeholder="" aria-label="Gross">
+    </div>
   </div>
 </div>
 
+    
+    <div class="w-50 p-3">
+<div class="col-sm-3">
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Tare</span>
+    </div>
+       <input type="text" class="form-control" placeholder="" aria-label="Tare">
+    </div>
+   </div>
+  </div>
 </div>
+
+    
+    <div class="w-50 p-3">
+<div class="col-sm-3">
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"><b>Net</b></span>
+    </div>
+       <input type="text" class="form-control" placeholder="" aria-label="Net">
+    </div>
+   </div>
+  </div>
+</div>
+
     
    
+
     
+<! --Buttons-->
     
-  <div style="text-align: left;">
-    <button class="btn btn-primary btn-lg text-center mb-4">Save</button>
+<div>    
+<button style="margin-right: 10px; margin-left: 15px; margin-top: 15px;" type="button" class="btn btn-success">Save</button>
+    
+<button style="margin-right: 10px; margin-top: 15px;" type="button" class="btn btn-success">Print</button>
+ 
+<button style="margin-right: 15px; margin-top: 15px;" type="button" class="btn btn-success">Search</button>
+    
+<button style="margin-right: 15px; margin-top: 15px;" type="button" class="btn btn-success">Settings</button>
+</div>
+
+    
     
   <div class="mb-5">
   <label for="formGroupExampleInput" class="form-label"></label>
